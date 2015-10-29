@@ -10,15 +10,15 @@
 
 
     <ul class="sidebar-nav">
-      <li><a href="{{.Site.BaseURL}}/blog">Posts</a></li>
+      <li><a href="{{.Site.BaseURL}}post">Posts</a></li>
       {{ range .Site.Menus.main }}
-        <li><a href="{{.Url}}">{{ .Name }} </a></li>
+        <li><a href="{{.URL}}">{{ .Name }} </a></li>
       {{end}}
       <br/>
       {{with .Site.Menus.code}}
       <li>Code:</li>
         {{ range . }}
-          <li><a href="{{.Url}}">{{ .Name }} </a></li>
+          <li><a href="{{.URL}}">{{ .Name }} </a></li>
         {{end}}
       {{end}}
     </ul>
@@ -29,7 +29,7 @@
       {{ with .Site.Params.gplus }}<a href="{{.}}"><i class="fa fa-google-plus"></i></a>{{end}}
 
     <p class="footnote">powered by <a href="http://hugo.spf13.com">Hugo</a> <br/>
-    &copy; {{.Now.Format "2006"}} Nate Finch. All rights reserved.</p>
+    &copy; {{.Now.Format "2006"}} Ersi Ni. All rights reserved.</p>
     
   </div>
 </div>
