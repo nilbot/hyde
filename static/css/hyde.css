@@ -60,7 +60,7 @@ pre {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #300030;
+  background-color: #3c454f;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -165,7 +165,7 @@ a.sidebar-nav-item:focus {
   display:inline;
   vertical-align: bottom;
 }
- 
+
 .badges {
   float: right;
 }
