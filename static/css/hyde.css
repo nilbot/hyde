@@ -32,12 +32,12 @@
  */
 
 html {
-  font-family: "Roboto", sans-serif;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 58em) {
