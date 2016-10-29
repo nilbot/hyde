@@ -1,6 +1,11 @@
 {{ partial "head.html" . }}
 <body class="{{ .Site.Params.themeColor }}">
 
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/poole.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/hyde.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Sans:700|Roboto" rel="stylesheet">
   {{ partial "sidebar.html" . }}
 
   <div class="content container">
@@ -16,7 +21,7 @@
         </h1>
 
         <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-        
+
         {{if .Params.series}}
           {{ $name := index .Params.series 0 }}
           <p class="seriesname">Series: <a href="{{.Site.BaseURL}}/series/{{$name | urlize}}">{{$name}}</a></p>
