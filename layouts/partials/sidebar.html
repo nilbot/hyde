@@ -27,6 +27,6 @@
     {{ with .Site.Params.github }}<a href="{{.}}"><i class="fa fa-github-square"></i></a>&nbsp;&nbsp;{{end}}
     {{ with .Site.Params.gplus }}<a href="{{.}}"><i class="fa fa-google-plus"></i></a>{{end}}
 
-    <p class="footnote">powered by <a href="https://gohugo.io">Hugo</a> <br/>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006" }} Ersi Ni. All rights reserved. {{end}}</p>
+    <p class="footnote">powered by <a href="https://gohugo.io">Hugo</a> <br/>&copy; {{ now.Format "2006" }} {{ with .Site.Params.copyright }}{{.}}{{ else }}Ersi Ni{{end}}. All rights reserved. </p>
   </div>
 </div>
